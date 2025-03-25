@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background: #343a40;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important;
+        }
+
+        .hero {
+            height: 100vh;
+            background-image: url("/My protfolio/Portfolio/image for porfolio/bg\ img.jpg");
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .projects img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        section {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <i class="fa-brands fa-webflow" style="color: #f5f9f9;"></i>
+            <a class="navbar-brand" href="#">Webcoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-img">
+            <img src="/My protfolio/Portfolio/image for porfolio/girl img.jpg " alt="Photo">
+        </div>
+        <div class="container">
+
+            <h1>Welcome to My Portfolio</h1>
+            <p>Showcasing my projects and skills</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <h2 class="text-center ">About Me</h2>
+        <p class="text-center">Hello,I am Divya .I am a passionate web developer skilled in front-end and back-end
+            technologies.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5">
+        <h2 class="text-center">Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/My protfolio/Portfolio/sc img/sc.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">My First Project is <strong>My Portfolio</strong>.A portfolio is a tool to
+                            showcase your skills and abilities while also documenting your career journey.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/My protfolio/Portfolio/sc img/sc2.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">My Second Project is <strong>Image Gallery with lightbox</strong>.An image gallery is a specialized website designed primarily for displaying images.It is used to store and display a collection of pictures.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/My protfolio/Portfolio/sc img/sc3.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">My Third Project is <strong>E-commerce Product Page</strong>. E-commerce websites are built to connect shoppers to products or services for trading online.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contact Me</h2>
+        <form id="contactForm">
+            <div class="mb-3">
+                <i class="fa-solid fa-user"></i>
+                <label>Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <i class="fa-solid fa-envelope"></i>
+                <label>Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <i class="fa-solid fa-comment"></i>
+                <label>Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </section>
+
+    <!-- Social Media Links -->
+    <div class="text-center my-4">
+        <h4>Connect with me</h4>
+        <div class="social-icons">
+            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center p-3 bg-dark text-white">
+        &copy; 2025 My Portfolio | Designed by Me
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Smooth scrolling
+            $(".nav-link").on("click", function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $(this.hash).offset().top
+                    }, 800);
+                }
+            });
+
+            // Form validation
+            $("#contactForm").submit(function (event) {
+                event.preventDefault();
+                var name = $("#name").val().trim();
+                var email = $("#email").val().trim();
+                var message = $("#message").val().trim();
+
+                if (name === "" || email === "" || message === "") {
+                    alert("All fields are required!");
+                } else {
+                    alert("Message sent successfully!");
+                    $("#contactForm")[0].reset();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
